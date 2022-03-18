@@ -1,1 +1,7 @@
 # Oblig2_DATA1700
+
+
+
+TEST
+TEST
+TEST
