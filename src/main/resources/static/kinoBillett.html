@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblig 1: Bestilling av kinobilleter</title>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="application/javascript" src="kinoBillett.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body style="margin-left:1em">
+<h1>Bestilling av kinobilletter</h1>
+
+<div>
+    <label class="blockquote h2" style="margin-bottom:5px">Velg film: </label> </br>
+    <select class="btn btn-primary" name="Velg film her" id="filmMeny">
+        <option value="Spider-man">Spider-man</option>
+        <option value="Batman">Batman</option>
+        <option value="Superman">Superman</option>
+        <option value="Aquaman">Aquaman</option>
+        <option value="Ant-man">Ant-man</option>
+        <option value="Birdman">Birdman</option>
+        <option value="Lionman">Lionman</option>
+    </select><label id="tomFilm" style="color: red; margin-left:5px"></label>
+</div> <br>
+
+<div>
+    <label class="blockquote h2">Antall: </label>
+    <input type="text" id="antall" style="width: 30px"><label id="tomAntall" style="color: red; margin-left:5px"></label>
+</div> <br>
+<div style="overflow: hidden;">
+    <div style="float: left;">
+        <label class="blockquote h5">Fornavn</label> <br>
+        <label class="blockquote h5">Etternavn</label><br>
+        <label class="blockquote h5">Telefonnr</label> <br>
+        <label class="blockquote h5">Epost</label>
+    </div>
+    <div style="float: left; margin-left: 10px;">
+        <input type="text" id="fornavn" style="height: 25px; margin-bottom: 15px"><label id="tomFornavn" style="color: red; margin-left:5px"></label> <br>
+        <input type="text" id="etternavn" style="height: 25px; margin-bottom: 15px"><label id="tomEtternavn" style="color: red; margin-left:5px"></label> <br>
+        <input type="text" id="telefonnr" style="height: 25px; margin-bottom: 15px"><label id="tomTelefonnr" style="color: red; margin-left:5px"></label> <br>
+        <input type="text" id="epost" style="height: 25px; margin-bottom: 15px"><label id="tomEpost" style="color: red; margin-left:5px"></label>
+    </div>
+</div> <br>
+<button type="button" class="btn btn-primary" onclick="kjopBillett()" style="margin-bottom:10px">Kjøp billett</button>
+<div>
+    <h2>Alle billetter:</h2>
+    <div id="billetter"></div>
+</div> <br>
+<div>
+    <button type="button" class="btn btn-primary" onclick="slettBilletter()">Slett alle billetter</button>
+</div>
+</body>
+</html>
