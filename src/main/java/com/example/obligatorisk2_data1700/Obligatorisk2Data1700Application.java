@@ -1,4 +1,4 @@
-package com.example;
+package com.example.obligatorisk2_data1700;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
